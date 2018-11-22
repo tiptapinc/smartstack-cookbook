@@ -18,7 +18,10 @@ package 'git'
 include_recipe 'runit'
 
 # we're going to need ruby too!
-# include_recipe 'ruby'
+package 'ruby2.5.1' do
+  action :install
+end
+
 gem_package 'bundler'
 
 # clean up old crap
