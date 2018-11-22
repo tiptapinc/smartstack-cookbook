@@ -18,7 +18,7 @@ package 'git'
 include_recipe 'runit'
 
 # we're going to need ruby too!
-package 'ruby2.5.1' do
+package 'ruby' do
   action :install
 end
 
