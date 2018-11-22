@@ -11,7 +11,7 @@ recipe           'smartstack::nerve', 'Installs and configures nerve, the servic
 recipe           'smartstack::synapse', 'Installs and confgures a synapse, the service discovery component'
 
 depends          'runit', '>= 1.1.0'
-depends          'ruby', '~> 0.9.2'
+# depends          'ruby', '~> 0.9.2'
 depends          'java'
 
 supports         'ubuntu', '= 12.04'
