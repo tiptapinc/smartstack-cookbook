@@ -20,7 +20,7 @@ include_recipe 'runit'
 # use Brightbox so we can run older ruby version
 # on later Ubuntu installs. Have successfully tried
 # 
-# ruby 1.9.3 with ubuntu 16.04
+# ruby 1.9.1 with ubuntu 16.04
 #
 apt_repository 'brightbox ruby' do
   uri          'ppa:brightbox/ruby-ng'
@@ -30,7 +30,7 @@ apt_update 'update packages' do
   action :update
 end
 
-package 'ruby1.9.3'
+package 'ruby1.9.1'
 
 gem_package 'bundler'
 
