@@ -30,7 +30,9 @@ apt_update 'update packages' do
   action :update
 end
 
-package 'ruby1.9.1'
+execute "apt-get -y install ruby1.9.1" do
+  user "root"
+end
 
 gem_package 'bundler'
 
