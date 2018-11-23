@@ -22,15 +22,23 @@ include_recipe 'runit'
 # 
 # ruby 1.9.1 with ubuntu 16.04
 #
-apt_repository 'brightbox ruby' do
-  uri          'ppa:brightbox/ruby-ng'
+execute "apt-add-repository ppa:brightbox/ruby-ng" do
+  user "root"
 end
 
-apt_update 'update packages' do
-  action :update
+execute "apt-get update" do
+  user "root"
+end
+
+execute "apt-get -y remove ruby" do
+  user "root"
 end
 
 execute "apt-get -y install ruby1.9.1" do
+  user "root"
+end
+
+execute "apt-get -y install ruby-switch" do
   user "root"
 end
 
