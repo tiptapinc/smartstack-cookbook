@@ -58,7 +58,8 @@ default.synapse.config = {
       'balance  roundrobin',
     ],
     'extra_sections' => {
-      'listen stats :3212' => [
+      'listen stats' => [
+        'bind 0.0.0.0:3212',
         'mode http',
         'stats enable',
         'stats uri /',
