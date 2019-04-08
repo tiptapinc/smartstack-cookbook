@@ -34,7 +34,7 @@ execute "apt-get -y remove ruby" do
   user "root"
 end
 
-execute "apt-get -y install ruby1.9.1-dev" do
+execute "apt-get -y install ruby2.5 ruby2.5-dev" do
   user "root"
 end
 
@@ -42,7 +42,7 @@ execute "apt-get -y install ruby-switch" do
   user "root"
 end
 
-execute "ruby-switch --set ruby1.9.1" do
+execute "ruby-switch --set ruby2.5" do
   user "root"
 end
 
