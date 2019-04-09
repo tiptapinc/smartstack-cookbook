@@ -58,7 +58,7 @@ end
 #   user "root"
 # end
 
-gem_package 'bundler'
+# gem_package 'bundler'
 
 # clean up old crap
 # TODO: remove eventually
