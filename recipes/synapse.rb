@@ -65,8 +65,9 @@ else
     group   node.smartstack.user
     action  :nothing
 
-    environment ({'GEM_HOME' => node.smartstack.gem_home})
-    command     "bundle install --without development"
+    # environment ({'GEM_HOME' => node.smartstack.gem_home})
+    # command     "bundle install --without development"
+    command "gem install synapse --install-dir /opt/smartstack/synapse --no-ri --no-rdoc"
   end
 end
 
