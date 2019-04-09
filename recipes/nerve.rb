@@ -35,8 +35,9 @@ else
     group   node.smartstack.user
     action  :nothing
 
-    environment ({'GEM_HOME' => node.smartstack.gem_home})
-    command     "bundle install --without development"
+#    environment ({'GEM_HOME' => node.smartstack.gem_home})
+#    command     "bundle install --without development"
+    command "gem install nerve --install-dir /opt/smartstack/nerve --no-ri --no-rdoc"
   end
 end
 
