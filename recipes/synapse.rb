@@ -67,7 +67,7 @@ else
 
     # environment ({'GEM_HOME' => node.smartstack.gem_home})
     # command     "bundle install --without development"
-    command "gem install synapse --install-dir /opt/smartstack/synapse --no-ri --no-rdoc"
+    command "gem install synapse --install-dir /opt/smartstack/synapse --no-document"
   end
 end
 
