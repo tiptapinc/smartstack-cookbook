@@ -60,10 +60,10 @@ else
 
   # do the actual install of synapse and dependencies
   execute "synapse_install" do
-    cwd     node.synapse.install_dir
-    user    node.smartstack.user
-    group   node.smartstack.user
-    action  :nothing
+    # cwd     node.synapse.install_dir
+    # user    node.smartstack.user
+    # group   node.smartstack.user
+    # action  :nothing
 
     # environment ({'GEM_HOME' => node.smartstack.gem_home})
     # command     "bundle install --without development"

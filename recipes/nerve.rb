@@ -30,10 +30,10 @@ else
 
   # do the actual install of nerve and dependencies
   execute "nerve_install" do
-    cwd     node.nerve.install_dir
-    user    node.smartstack.user
-    group   node.smartstack.user
-    action  :nothing
+    # cwd     node.nerve.install_dir
+    # user    node.smartstack.user
+    # group   node.smartstack.user
+    # action  :nothing
 
 #    environment ({'GEM_HOME' => node.smartstack.gem_home})
 #    command     "bundle install --without development"
